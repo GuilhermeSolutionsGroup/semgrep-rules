@@ -1,7 +1,7 @@
 rules:
   - id: "py-guilherme-detect"
     languages:
-      - "python"
+      - "generic"
     message: |
       Found the word 'Guilherme'.
     metadata:
