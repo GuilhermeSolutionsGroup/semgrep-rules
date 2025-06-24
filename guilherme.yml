@@ -6,7 +6,7 @@ rules:
       Found the word 'Guilherme'.
     metadata:
       shortDescription: "Detect usage of the word Guilherme"
-      cwe: "CWE-120"
+      
       owasp:
         - "A1:2017-Injection"
       security-severity: "High"
