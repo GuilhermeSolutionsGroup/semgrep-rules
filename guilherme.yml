@@ -1,13 +1,17 @@
 rules:
-  - id: "custom-detect-guilherme"
+  - id: "py-guilherme-detect"
     languages:
-      - "generic"
+      - "python"
     message: |
       Found the word 'Guilherme'.
     metadata:
       shortDescription: "Detect usage of the word Guilherme"
-      category: "custom"
-      license: "MIT"
+      cwe: "CWE-120"
+      owasp:
+        - "A1:2017-Injection"
+      security-severity: "High"
+      category: "security"
+      license: GPL 2.0 (c) 1989, 1991 Free Software Foundation, Inc.
     pattern-either:
       - pattern: "Guilherme"
-    severity: "INFO"
+    severity: "ERROR"
