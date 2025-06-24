@@ -1,7 +1,13 @@
 rules:
-  - id: detect-guilherme
-    languages: [generic]
-    message: "Found the word 'Guilherme'"
-    severity: INFO
-    patterns:
-      - pattern: Guilherme
+  - id: "custom-detect-guilherme"
+    languages:
+      - "generic"
+    message: |
+      Found the word 'Guilherme'.
+    metadata:
+      shortDescription: "Detect usage of the word Guilherme"
+      category: "custom"
+      license: "MIT"
+    pattern-either:
+      - pattern: "Guilherme"
+    severity: "INFO"
